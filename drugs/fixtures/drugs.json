@@ -1,0 +1,42 @@
+[
+  {
+    "model": "drugs.drugs",
+    "pk": 1,
+    "fields": {
+      "name": "linalool",
+      "in_chi": "CDOSHBSSFJOMGT-UHFFFAOYSA-N"
+    }
+  },
+  {
+    "model": "drugs.drugs",
+    "pk": 2,
+    "fields": {
+      "name": "alpha-Pinene",
+      "in_chi": "GRWFGVWFFZKLTI-UHFFFAOYSA-N"
+    }
+  },
+  {
+    "model": "drugs.drugs",
+    "pk": 3,
+    "fields": {
+      "name": "terpinolene",
+      "in_chi": "MOYAFQVGZZPNRA-UHFFFAOYSA-N"
+    }
+  },
+  {
+    "model": "drugs.drugs",
+    "pk": 4,
+    "fields": {
+      "name": "beta-ocimene",
+      "in_chi": "IHPKGUQCSIINRJ-CSKARUKUSA-N"
+    }
+  },
+  {
+    "model": "drugs.drugs",
+    "pk": 5,
+    "fields": {
+      "name": "Caryophyllene",
+      "in_chi": "NPNUFJAVOOONJE-GFUGXAQUSA-N"
+    }
+  }
+]
