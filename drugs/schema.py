@@ -1,15 +1,24 @@
-import graphene 
-
+import graphene
 from graphene_django.types import DjangoObjectType
+from drugs.models import Drug
 
-from drugs.models import Drugs
 
 class DrugType(DjangoObjectType):
-  class Meta:
-    model = Drugs
+    class Meta:
+        model = Drug
+
 
 class Query(object):
-  all_drugs = graphene.List(DrugType)
+    all_drugs = graphene.List(DrugType)
+    drug = graphene.Field(DrugType, id=graphene.Int())
 
-  def resolve_all_drugs(self,info, **kwargs):
-    return Drugs.objects.all()
+    def resolve_all_drugs(self, info, **kwargs):
+        return Drug.objects.all()
+
+    def resolve_drug(self, info, **args):
+        id = args.get('id')
+
+        if id is not None:
+            return Drug.objects.get(pk=id)
+
+        return None
