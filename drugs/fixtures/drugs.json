@@ -1,6 +1,6 @@
 [
   {
-    "model": "drugs.drugs",
+    "model": "drugs.drug",
     "pk": 1,
     "fields": {
       "name": "linalool",
@@ -8,7 +8,7 @@
     }
   },
   {
-    "model": "drugs.drugs",
+    "model": "drugs.drug",
     "pk": 2,
     "fields": {
       "name": "alpha-Pinene",
@@ -16,7 +16,7 @@
     }
   },
   {
-    "model": "drugs.drugs",
+    "model": "drugs.drug",
     "pk": 3,
     "fields": {
       "name": "terpinolene",
@@ -24,7 +24,7 @@
     }
   },
   {
-    "model": "drugs.drugs",
+    "model": "drugs.drug",
     "pk": 4,
     "fields": {
       "name": "beta-ocimene",
@@ -32,7 +32,7 @@
     }
   },
   {
-    "model": "drugs.drugs",
+    "model": "drugs.drug",
     "pk": 5,
     "fields": {
       "name": "Caryophyllene",
