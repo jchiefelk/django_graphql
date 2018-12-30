@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from graphene_django.views import GraphQLView
+from drugs import views
 
 urlpatterns = [
   path('graphql/', GraphQLView.as_view(graphiql=True)),
+  path('drugs', views.get_drugs),
   path('admin/', admin.site.urls)
 ]
